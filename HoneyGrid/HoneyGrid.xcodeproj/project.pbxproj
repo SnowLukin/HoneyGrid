@@ -11,8 +11,8 @@
 		D7C1E0DD285B190A005662A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C1E0DC285B190A005662A9 /* ContentView.swift */; };
 		D7C1E0DF285B1912005662A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C1E0DE285B1912005662A9 /* Assets.xcassets */; };
 		D7C1E0E2285B1912005662A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C1E0E1285B1912005662A9 /* Preview Assets.xcassets */; };
-		D7C1E0E9285B1940005662A9 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C1E0E8285B1940005662A9 /* HexagonView.swift */; };
-		D7C1E0EB285B1B02005662A9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C1E0EA285B1B02005662A9 /* Home.swift */; };
+		D7C1E0E9285B1940005662A9 /* HexagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C1E0E8285B1940005662A9 /* HexagonShape.swift */; };
+		D7C1E0EB285B1B02005662A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C1E0EA285B1B02005662A9 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		D7C1E0DC285B190A005662A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7C1E0DE285B1912005662A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C1E0E1285B1912005662A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D7C1E0E8285B1940005662A9 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
-		D7C1E0EA285B1B02005662A9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D7C1E0E8285B1940005662A9 /* HexagonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonShape.swift; sourceTree = "<group>"; };
+		D7C1E0EA285B1B02005662A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				D7C1E0DA285B190A005662A9 /* HoneyGridApp.swift */,
 				D7C1E0DC285B190A005662A9 /* ContentView.swift */,
-				D7C1E0E8285B1940005662A9 /* HexagonView.swift */,
-				D7C1E0EA285B1B02005662A9 /* Home.swift */,
+				D7C1E0E8285B1940005662A9 /* HexagonShape.swift */,
+				D7C1E0EA285B1B02005662A9 /* HomeView.swift */,
 				D7C1E0DE285B1912005662A9 /* Assets.xcassets */,
 				D7C1E0E0285B1912005662A9 /* Preview Content */,
 			);
@@ -145,8 +145,8 @@
 			files = (
 				D7C1E0DD285B190A005662A9 /* ContentView.swift in Sources */,
 				D7C1E0DB285B190A005662A9 /* HoneyGridApp.swift in Sources */,
-				D7C1E0EB285B1B02005662A9 /* Home.swift in Sources */,
-				D7C1E0E9285B1940005662A9 /* HexagonView.swift in Sources */,
+				D7C1E0EB285B1B02005662A9 /* HomeView.swift in Sources */,
+				D7C1E0E9285B1940005662A9 /* HexagonShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

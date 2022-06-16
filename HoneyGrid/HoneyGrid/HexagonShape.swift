@@ -1,5 +1,5 @@
 //
-//  HexagonView.swift
+//  Hexagon.swift
 //  HoneyGrid
 //
 //  Created by Snow Lukin on 16.06.2022.
@@ -30,16 +30,10 @@ struct Hexagon: Shape {
     }
 }
 
-struct HexagonView: View {
-    var body: some View {
+struct HexagonShape_Previews: PreviewProvider {
+    static var previews: some View {
         Hexagon()
             .frame(width: 100, height: 100, alignment: .center)
             .padding()
-    }
-}
-
-struct HexagonView_Previews: PreviewProvider {
-    static var previews: some View {
-        HexagonView()
     }
 }

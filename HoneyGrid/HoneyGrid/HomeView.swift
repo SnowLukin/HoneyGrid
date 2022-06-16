@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     
     @State var data: [String] = Array(repeating: "_", count: 0)
     @State var rows: [[String]] = []
@@ -26,8 +26,9 @@ struct Home: View {
                             ForEach(rows[index], id: \.self) { value in
                                 Hexagon()
                                     .fill(.red)
-                                    .frame(width: (width - 20) / 3, height: 120)
+                                    .frame(width: (width - 20) / 3.2, height: 110)
                                     .offset(x: getOffset(index: index))
+                                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
                             }
                         }
                     }
@@ -42,7 +43,7 @@ struct Home: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        withAnimation {
+                        withAnimation(.spring()) {
                             rows.removeAll()
                             data.append("_")
                             generateHoney()
@@ -51,19 +52,30 @@ struct Home: View {
                         Image(systemName: "plus")
                     }
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        withAnimation(.spring()) {
+                            rows.removeAll()
+                            data.removeLast()
+                            generateHoney()
+                        }
+                    } label: {
+                        Image(systemName: "minus")
+                    }
+                }
             }
         }
         
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }
 
-extension Home {
+extension HomeView {
     
     private func getOffset(index: Int) -> CGFloat {
         let current = rows[index].count
